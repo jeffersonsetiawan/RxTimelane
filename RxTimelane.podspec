@@ -13,7 +13,7 @@ The RxSwift logging package for the Timelane Instrument.
   s.source         = { :git => 'https://github.com/icanzilb/RxTimelane.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/icanzilb'
 
-  s.swift_versions = ['5.0']
+  s.swift_version = '5.0'
   s.requires_arc          = true
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
