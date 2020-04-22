@@ -22,6 +22,6 @@ The RxSwift logging package for the Timelane Instrument.
   
   s.source_files = 'Sources/**/*.swift'
   s.frameworks = 'Foundation'
-  s.dependency "RxSwift", "~> 5.1"
+  s.dependency "RxSwift", "~> 5.0"
   s.dependency "TimelaneCore", "~> 1.0"
 end
