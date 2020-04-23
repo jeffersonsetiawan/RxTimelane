@@ -27,8 +27,8 @@ public extension ObservableType {
               filter: Set<Timelane.LaneType> = Set(Timelane.LaneType.allCases),
               file: StaticString = #file,
               function: StaticString = #function, line: UInt = #line,
-              transformValue transform: @escaping (_ value: Element) -> String = { String(describing: $0) },
-              logger: @escaping Timelane.Logger = Timelane.defaultLogger) -> Observable<Element> {
+              transformValue transform: @escaping (_ value: E) -> String = { String(describing: $0) },
+              logger: @escaping Timelane.Logger = Timelane.defaultLogger) -> Observable<E> {
       
         let fileName = file.description.components(separatedBy: "/").last!
         let source = "\(fileName):\(line) - \(function)"
